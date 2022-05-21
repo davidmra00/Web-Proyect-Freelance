@@ -37,6 +37,7 @@ ul{
     list-style-type: none;
     display: flex;
     margin-right: 100px;
+    width: 30%;
 }
 .hero{
     background-color: #1ABC9C;
@@ -142,7 +143,7 @@ p{
     margin-top: 0px;
 }
 #forms{
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -150,7 +151,7 @@ p{
     justify-content: center;
 }
 .finput{
-    width: inherit;
+    width: 100%;
  }
 .finput label{
     display: inline-block;
@@ -190,7 +191,7 @@ input{
 }
 #footer1{
     background-color: #2C3E50;
-    height: 300px;
+    
     display: block;
 }
 #cont{
@@ -238,5 +239,28 @@ input{
 #footer2 p{
     text-align:center ;
     margin: 0px;
-    padding: 45px;
+    padding-top: 45px;
+}
+
+@media (max-width:1000px) {
+    #container{
+        flex-direction: column;
+    }
+    .text{
+        width: inherit;
+    }
+    #cont{
+        flex-direction: column;
+    }
+    #social{
+        padding-left: 0px;
+    }
+    #link{
+        margin-left: 20px;
+    }
+}
+@media (max-width:700px){
+    ul{
+        flex-direction: column;
+    }
 }
